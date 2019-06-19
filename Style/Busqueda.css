@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+		--colorPrincipal: #57635f;
+		--colorSecundario: #566f7c;
+		--colorTerciario: #3f525c;
+		--textoSimple: 'Tajawal', sans-serif;
+}
+
+body{
+	background: #eeeeee;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor-busqueda {
+    height: 300px;
+}
