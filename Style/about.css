@@ -1,0 +1,73 @@
+:root {
+    --colorPrincipal: #57635f;
+    --colorSecundario: #566f7c;
+    --colorTerciario: #3f525c;
+    --textoSimple: "Tajawal", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  body{
+    background-image: url(../Resources/Images/background-about.jpg);
+    font-family: var(--textoSimple);
+    font-size: 1.1em;
+  }
+  
+  h2, h3{
+    font-weight: bold;
+    font-size: 1.9em;
+  }
+  /* Principal */
+  .container-about {
+      background: #fffffff5;
+      margin: 12px auto;
+      max-height: 100%;
+      max-width: 80%;
+      padding: 5%;
+      border-radius: 3%;
+  }
+
+  span {
+    font-weight: bold;
+  }
+  /* Equipo */
+  .team {
+    margin-top: 10%;
+  }
+
+  .team-photo {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      margin-top: 5%;
+  }
+
+  .view-cascade {
+      max-height: 760px;
+      margin: 7px 2px;
+
+  }
+
+  .view-cascade img {
+      max-height: 9em;
+      width: auto;
+  }
+
+  .card-cascade {
+    margin-top: 10px;
+  }
+
+  .card-cascade i{
+    color: var(--colorPrincipal);
+    cursor: pointer;
+  }
+
+  .card-cascade i:hover{
+    color: #000000;
+    transition: .8s ease-in-out;
+  }
