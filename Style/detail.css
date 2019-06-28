@@ -1,0 +1,109 @@
+:root {
+  --colorPrincipal: #57635f;
+  --colorSecundario: #566f7c;
+  --colorTerciario: #3f525c;
+  --background: #eeeeee;
+  --textoSimple: "Tajawal", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--textoSimple);
+}
+
+/* Formulario de consulta */
+
+.form-control,
+text-area {
+  text-align: center;
+  background: none;
+  border: none;
+  border-bottom: 3px solid var(--colorSecundario);
+  box-shadow: none;
+}
+
+.form-control:focus, text-area:focus {
+  background: #dfdfdf;
+  color: #444444;
+  box-shadow: none;
+  border-bottom: 3px solid var(--colorTerciario);
+  transition: .5s;
+}
+
+form .send-consulta {
+  background: var(--colorSecundario);
+  color: #ffffff;
+}
+
+form .send-consulta:hover {
+  color: var(--background);
+}
+
+.consulta-fijo:hover {
+  background: #ffffff;
+  transition: .8s;
+  border-radius: 5px;
+}
+
+/* Precio y Detalles*/
+
+.detail {
+  background: #ffffff;
+}
+
+.detail h5,
+h6 {
+  margin-bottom: 0;
+}
+
+.detail span {
+  color: #ffffff;
+  font-size: 0.8em;
+  background: #008000;
+  border-radius: 3px;
+  padding: 0.7%;
+  margin-bottom: 0;
+}
+
+table {
+  margin-top: 5px;
+}
+
+table th {
+  font-weight: normal;
+}
+
+.precio {
+  border-bottom: 2px solid var(--background);
+  text-align: center;
+}
+
+.amenities {
+  width: 100%;
+  font-size: 1em;
+}
+
+.fa-check-circle {
+  color: #008000;
+  margin-right: 4px;
+}
+
+/* Mapa */
+
+.map-build {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+@media only screen and (max-device-width: 480px),
+only screen and (min-device-width: 490px) and (max-device-width: 1136px) {
+
+  .consulta-fijo {
+    position: relative !important;
+  }
+}
