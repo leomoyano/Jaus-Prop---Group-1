@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>JAUS Propiedades</title>
+	<script src="https://kit.fontawesome.com/ded3d597f1.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="Style/Template.css">
+	<link rel="stylesheet" href="Style/tasacion.css>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm">
+	
+	</button>
+	<a class="navbar-brand" href="index.html">
+		<img src="Resources/Images/logo/logo_white.svg" width="130px" height="auto" alt="">
+	</a>
+	<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+	<div class="navbar-nav ml-auto text-center">
+		<a class="nav-item nav-link" href="#">Tasación</a>
+		<a class="nav-item nav-link" href="#">Compra</a>
+		<a class="nav-item nav-link" href="#">Venta</a>
+		<a class="nav-item nav-link" href="#">Sobre Nosotros</a>
+	</div>
+	</div>
+
+</nav>
+  <!-- DESDE ACA SE EMPIEZA -->
+  
+
+
+
+
+
+<div class="container-tasacion">
+    
+  <center>
+    <div style="width: 50%; margin: 0;  font-family: sans-serif ; border-radius: 7px; ">
+  
+  <form id="forml" method="POST" action="enviar.php">
+
+<br>
+<br>
+ <label>transaccion</label>
+  <select name="transaccion" class="form-control" required>
+    <option value="tas">tasacion</option>
+    <option value="alq">alquiler</option>
+    <option value="ven">venta</option>
+  </select> 
+
+  <label>tipo de inmueble</label>
+  <select name="tipo de inmueble" class="form-control" required>
+    <option value="dpt">departamento</option>
+    <option value="cas">casa</option>
+    <option value="ph">ph</option>
+    <option value="terreno">terreno</option>
+  </select>
+
+  <label>ciudad de busqueda</label>
+  <select name="ciudad" class="form-control" required>
+    <option value="tuc">tucuman</option>
+    <option value="cor">cordoba</option>
+    <option value="lar">la rioja</option>
+    <option value="san">santiago del estero</option>
+    <option value="sal">salta</option>
+  </select>
+
+  <label>ambientes</label>
+  <input type="number" name="ambientes" class="form-control">
+
+  <label>antiguedad</label>
+  <select name="antiguedad" class="form-control">
+    <option value="aes">a estrenar</option>
+    <option value="10">10 años</option>
+    <option value="10+">10 a 20 años</option>
+    <option value="20+">20 a 30 años</option>
+    </select>
+
+    <label>superficie cubierta</label>
+  <input type="number" name="superficie cubierta" class="form-control">
+
+  <label>superficie total</label>
+  <input type="number" name="superficie total" class="form-control">
+   
+  <label>zona de busqueda</label> 
+  <select name="zona" class="form-control" required>
+    <option value="nor">norte</option>
+    <option value="sur">sur</option>
+    <option value="est">este</option>
+    <option value="cen">centro</option>
+    <option value="yer">yerba buena</option>
+  </select>
+  <br>
+ <button type="submit" class="btn btn-warning">Enviar</button>
+
+
+</form>
+    </div>
+</center>
+</div>
+
+
+
+
+
+
+
+</div>
+
+  <!-- Footer-->
+  <div class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5>Realiza tu consulta</h5>
+          <ul class="contact-info list-unstyled">
+            <li><a href="mailto:sales@landy.com" class="text-dark">consulta@jausprop.com</a></li>
+            <li><a href="tel:123456789" class="text-dark">+54 381 456789</a></li>
+          </ul>
+          <p class="text-muted">Estamos disponibles de Lunes a Sabado, sacate las dudas, envianos un mail o un mensaje.</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5>Secciones</h5>
+          <ul class="links list-unstyled">
+            <li> <a href="#" class="text-muted">Tasá tu vivienda</a></li>
+            <li> <a href="#" class="text-muted">Compra</a></li>
+            <li> <a href="#" class="text-muted">Vende</a></li>
+            <li> <a href="#" class="text-muted">Sobre
+              Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="socialnet col-lg-4 col-md-6 text-center">
+          <h5>Seguínos!</h5>
+          <ul class="links list-unstyled d-flex justify-content-center">
+            <li><i class="icon fab fa-facebook-f"></i></li>
+            <li><i class="icon fab fa-instagram"></i></li>
+            <li><i class="icon fab fa-twitter"></i></li>
+            <li><i class="icon fab fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-md-0">&copy; 2019 Jaus Propiedades. All rights reserved. </p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Codigo que hace que las acciones de botones y cuestiones responsive funcionen-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+	// A $( document ).ready() block.
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+</body>
+</html>
