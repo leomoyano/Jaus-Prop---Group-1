@@ -11,13 +11,30 @@
 		--colorSecundario: #566f7c;
 		--colorTerciario: #3f525c;
 		--textoSimple: 'Tajawal', sans-serif;
+		--backgroundColor: #eeeeee;
 }
 
 body{
-	background: #eeeeee;
+	background: var(--backgroundColor);
 	font-family: 'Open Sans', sans-serif;
 }
 
-.contenedor-busqueda {
-    height: 300px;
+.contenedor-principal{
+    height: 1600px;
 }
+
+.col-mapa{
+	height: 100%;
+	background-color: var(--backgroundColor);
+	font-family: var(--textoSimple);
+}
+
+.col-filtros{
+	height: 100%;
+}
+
+.contenedor-recom{
+	height: 500px;
+}
+
+
