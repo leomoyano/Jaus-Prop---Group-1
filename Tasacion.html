@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="Style/Template.css">
-  <link rel="stylesheet" href="Style/tasacion.css>
+  <link rel="stylesheet" href="Style/tasacion.css">
 
-	<link href=" https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
 
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
@@ -32,84 +33,148 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <div class="navbar-nav ml-auto">
-          <a class="nav-buttoms text-center" href="#">Tasación</a>
+          <a class="nav-buttoms text-center" href="tasacion.html">Tasación</a>
           <a class="nav-buttoms text-center" href="#">Compra</a>
-          <a class="nav-buttoms text-center" href="#">Venta</a>
-          <a class="nav-buttoms text-center" href="#">Sobre Nosotros</a>
+          <a class="nav-buttoms text-center" href="tasacion.html">Venta</a>
+          <a class="nav-buttoms text-center" href="about.html">Sobre Nosotros</a>
         </div>
       </div>
     </div>
   </nav>
   <!-- Fin Navbar -->
-  
-  <!-- DESDE ACA SE EMPIEZA -->
-
-  <div class="container-tasacion">
-    <div style="width: 50%; margin: 0;  font-family: sans-serif ; border-radius: 7px; ">
-
-      <form id="forml" method="POST" action="enviar.php">
-
-        <br>
-        <br>
-        <label>transaccion</label>
-        <select name="transaccion" class="form-control" required>
-          <option value="tas">tasacion</option>
-          <option value="alq">alquiler</option>
-          <option value="ven">venta</option>
-        </select>
-
-        <label>tipo de inmueble</label>
-        <select name="tipo de inmueble" class="form-control" required>
-          <option value="dpt">departamento</option>
-          <option value="cas">casa</option>
-          <option value="ph">ph</option>
-          <option value="terreno">terreno</option>
-        </select>
-
-        <label>ciudad de busqueda</label>
-        <select name="ciudad" class="form-control" required>
-          <option value="tuc">tucuman</option>
-          <option value="cor">cordoba</option>
-          <option value="lar">la rioja</option>
-          <option value="san">santiago del estero</option>
-          <option value="sal">salta</option>
-        </select>
-
-        <label>ambientes</label>
-        <input type="number" name="ambientes" class="form-control">
-
-        <label>antiguedad</label>
-        <select name="antiguedad" class="form-control">
-          <option value="aes">a estrenar</option>
-          <option value="10">10 años</option>
-          <option value="10+">10 a 20 años</option>
-          <option value="20+">20 a 30 años</option>
-        </select>
-
-        <label>superficie cubierta</label>
-        <input type="number" name="superficie cubierta" class="form-control">
-
-        <label>superficie total</label>
-        <input type="number" name="superficie total" class="form-control">
-
-        <label>zona de busqueda</label>
-        <select name="zona" class="form-control" required>
-          <option value="nor">norte</option>
-          <option value="sur">sur</option>
-          <option value="est">este</option>
-          <option value="cen">centro</option>
-          <option value="yer">yerba buena</option>
-        </select>
-        <br>
-        <button type="submit" class="btn btn-warning">Enviar</button>
-
-
+  <div class="container container-tasacion p-3 justify-content-center">
+    <section class="col-12 detalles-tasacion text-center">
+      <form>
+        <h3 class="titulo-tasacion">Tipo de Operación</h3>
+        <div class="row justify-content-center mb-4">
+          <div class="btn-group btn-group-toggle col-6" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Venta
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Alquiler
+            </label>
+          </div>
+        </div>
       </form>
-    </div>
+      <h3 class="titulo-tasacion">Ubicación</h3>
+      <div class="form-group">
+        <label for="inputAddress" required>Dirrecion del inmueble</label>
+        <input type="text" class="form-control col-6 mx-auto" id="inputAddress" placeholder="Av. Siempreviva 123">
+      </div>
+      <div class="row col-12 mb-4 justify-content-center">
+        <div class="form-group col-md-4">
+          <label for="inputState">Ciudad</label>
+          <select id="inputState" class="form-control">
+            <option selected>San Miguel de Tucumán</option>
+            <option>La Rioja</option>
+            <option>Santiago del Estero</option>
+            <option>Salta</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputZone">Zona</label>
+          <select id="inputZone" class="form-control">
+            <option selected>Centro</option>
+            <option>Barrio Sur</option>
+            <option>Barrio Norte</option>
+            <option>Barrio Este</option>
+            <option>Barrio Oeste</option>
+          </select>
+        </div>
+      </div>
+      <h3 class="titulo-tasacion">Datos del inmueble</h3>
+      <div class="row col-12 mb-4 justify-content-center">
+        <div class="form-group col-md-4">
+          <label for="inputType">Tipo</label>
+          <select id="inputType" class="form-control">
+            <option selected>Departamento</option>
+            <option>Casa</option>
+            <option>PH</option>
+            <option>Oficina</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4 justify-content-center">
+          <label for="inputAge">Antigüedad</label>
+          <select id="inputAge" class="form-control">
+            <option selected>A Estrenar</option>
+            <option>1 a 5 Años</option>
+            <option>6 a 10 Años</option>
+            <option>11 a 20 Años</option>
+            <option>Mas de 20 Años</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12 mb-4">
+        <div class="row justify-content-center">
+          <label class="col-5">Superficie Cubierta (m²)
+            <input type="number" name="superficie cubierta" class="form-control"></label>
+          <label class="col-5">Superficie Total (m²)
+            <input type="number" name="superficie total" class="form-control"></label>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <label class="col-3">Ambientes
+            <input type="number" name="superficie cubierta" class="form-control"></label>
+          <label class="col-4" for="inputAge">Disposicion
+            <select id="inputAge" class="form-control">
+              <option selected>Frente</option>
+              <option>Contrafrente</option>
+            </select></label>
+          <label class="col-3" for="inputAge">Garage
+            <select id="inputAge" class="form-control">
+              <option selected>No</option>
+              <option>Sí</option>
+            </select></label>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <label class="col-4 ">Dormitorio/s
+            <input type="number" name="superficie cubierta" class="form-control"></label>
+          <label class="col-4">Baño/s
+            <input type="number" name="superficie total" class="form-control"></label>
+        </div>
+      </div>
+      <h3 class="titulo-tasacion">¿Qué amenities tiene?</h3>
+      <div class="col-12">
+        <div class="row justify-content-center m-3">
+          <div class="col-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="piscina">
+              <label class="custom-control-label" for="piscina">Piscina</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="parrilla">
+              <label class="custom-control-label" for="parrilla">Parrilla</label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="sum">
+              <label class="custom-control-label" for="sum">SUM</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="gym">
+              <label class="custom-control-label" for="gym">Gym</label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="business">
+              <label class="custom-control-label" for="business">Business Center</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="laundry">
+              <label class="custom-control-label" for="laundry">Laundry</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn m-3 btn-tasacion justify-content-center ">Enviar</button>
+    </section>
   </div>
-
-  </div>
-
   <!-- Footer-->
   <div class="py-5 bg-light footer-page">
     <div class="container">
@@ -156,14 +221,14 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
