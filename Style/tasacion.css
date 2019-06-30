@@ -1,0 +1,91 @@
+:root {
+    --colorPrincipal: #57635f;
+    --colorSecundario: #566f7c;
+    --colorTerciario: #3f525c;
+    --background: #eeeeee;
+    --textoSimple: "Tajawal", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--textoSimple);
+}
+
+/* Container gral */
+
+.detalles-tasacion {
+    background: #ffffff !important;
+}
+
+/* Formulario */
+.form-control {
+    text-align-last: center;
+    background: #dfdfdf;
+    border: none;
+    border-bottom: 3px solid var(--colorSecundario);
+    box-shadow: none;
+}
+
+.form-control input {
+    text-align: center;
+}
+
+.form-control:focus {
+    background: #eeebeb;
+    color: #444444;
+    box-shadow: none;
+    border-bottom: 3px solid var(--colorTerciario);
+    transition: .5s;
+}
+
+.btn-tasacion {
+    background: var(--colorSecundario);
+    color: #ffffff;
+}
+
+.btn-tasacion:hover {
+    color: var(--background);
+}
+
+.consulta-fijo:hover {
+    background: #ffffff;
+    transition: .8s;
+    border-radius: 5px;
+}
+
+/* Contenido del formulario */
+
+label {
+    font-size: 1.2em;
+}
+
+.titulo-tasacion {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.btn-group-toggle:focus {
+    box-shadow: none;
+}
+
+selected {
+    text-align: center;
+}
+
+/* Checkbox */
+
+input {
+    background: black;
+}
+
+.custom-control-label::after {
+    height: .9em;
+    background: #566f7c;
+    border-radius: 15%;
+    box-shadow: none;
+}
