@@ -31,11 +31,6 @@ body{
 
 .map-containers {
 	position: relative;
-
-}
-
-.map-containers-med{
-	position: relative;
 }
 
 .image-overlay {
@@ -67,7 +62,13 @@ body{
 .text-overlay {
 	background-color: var(--colorSecundario);
 	color: white;
-	font-size: 16px;
+	font-size: 1.1em;
+}
+
+.col-filtros{
+	height: 100%;
+	font-family: var(--textoSimple);
+	background-color: white;
 }
 
 .col-filtros h2{
@@ -75,9 +76,21 @@ body{
 	font-weight: bold;
 }
 
-.col-filtros{
-	height: 100%;
-	font-family: var(--textoSimple);
+.formulario {
+    text-align-last: center;
+    background: #dfdfdf;
+    border: none;
+    border-bottom: 3px solid var(--colorSecundario);
+    box-shadow: none;
+}
+
+.buttons .btn {
+    background: var(--colorSecundario);
+    color: #ffffff;
+}
+
+.buttons:hover {
+    color: var(--background);
 }
 
 .lista-zonas .item-zona{
