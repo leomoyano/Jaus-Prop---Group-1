@@ -68,48 +68,82 @@
                     <div class="list-group mt-5 lista-zonas">
                         <a class="list-group-item list-group-item-action active titulo-zonas">Zonas San Miguel de
                             Tucumán</a>
-                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Centro</a>
-                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Norte</a>
-                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Sur</a>
-                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Este</a>
-                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Oeste</a>
-                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Noroeste</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona" data-toggle="tooltip"
+                            data-placement="right" title="107 Publicaciones">Zona Centro</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona" data-toggle="tooltip"
+                            data-placement="right" title="94 Publicaciones">Zona Norte</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona" data-toggle="tooltip"
+                            data-placement="right" title="51 Publicaciones">Zona Sur</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona" data-toggle="tooltip"
+                            data-placement="right" title="23 Publicaciones">Zona Este</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona" data-toggle="tooltip"
+                            data-placement="right" title="32 Publicaciones">Zona Oeste</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona" data-toggle="tooltip"
+                            data-placement="right" title="18 Publicaciones">Zona Noroeste</a>
                     </div>
                 </div>
                 <div class="col-8 col-mapa">
                     <div class="row align-items-start justify-content-center mt-5 fila-1">
-                        <div class="col-3 p-0">
+                        <div class="col-3 p-0 map-containers">
                             <a href="#">
-                                <img class="img-thumbnail float-right" src="Resources/Images/arribaIzq.jpg">
+                                <img class="img-thumbnail float-right image-overlay"
+                                    src="Resources/Images/arribaIzq.jpg">
+                                <div class="middle">
+                                    <div class="text-overlay">107 Publicaciones</div>
+                                </div>
                             </a>
                         </div>
-                        <div class="col-3 text-center p-0">
+                        <div class="col-3 text-center p-0 map-containers">
                             <a href="#">
-                                <img class="img-thumbnail" src="Resources/Images/arribaMedio.jpg">
+                                <img class="img-thumbnail image-overlay" src="Resources/Images/arribaMedio.jpg">
+                                <div class="middle">
+                                    <div class="text-overlay">107 Publicaciones</div>
+                                </div>
                             </a>
                         </div>
-                        <div class="col-3 p-0">
+                        <div class="col-3 p-0 map-containers">
                             <a href="#">
-                                <img class="img-thumbnail float-left" src="Resources/Images/arribaDer.jpg">
+                                <img class="img-thumbnail float-left image-overlay"
+                                    src="Resources/Images/arribaDer.jpg">
+                                <div class="middle">
+                                    <div class="text-overlay">107 Publicaciones</div>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="row justify-content-center fila-2">
-                        <div class="col-3 p-0">
+                        <div class="col-3 p-0 map-containers">
                             <a href="#">
-                                <img class="img-thumbnail float-right" src="Resources/Images/abajoIzq.jpg">
+                                <img class="img-thumbnail float-right image-overlay"
+                                    src="Resources/Images/abajoIzq.jpg">
+                                <div class="middle">
+                                    <div class="text-overlay">107 Publicaciones</div>
+                                </div>
                             </a>
                         </div>
                         <div class="col-3 p-0 text-center">
-                            <a href="#">
-                                <img class="img-thumbnail" src="Resources/Images/abajoMedArr.jpg">
-                            </a>
-                            <a href="#">
-                                <img class="img-thumbnail" src="Resources/Images/abajoMedAb.jpg">
-                            </a>
+                            <div class="map-containers">
+                                <a href="#">
+                                    <img class="img-thumbnail image-overlay" src="Resources/Images/abajoMedArr.jpg">
+                                    <div class="middle">
+                                        <div class="text-overlay">107 Publicaciones</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="map-containers">
+                                <a href="#">
+                                    <img class="img-thumbnail image-overlay" src="Resources/Images/abajoMedAb.jpg">
+                                    <div class="middle">
+                                        <div class="text-overlay">107 Publicaciones</div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-3 p-0">
-                            <img class="img-thumbnail float-left" src="Resources/Images/abajoDer.jpg">
+                        <div class="col-3 p-0 map-containers">
+                            <img class="img-thumbnail float-left image-overlay" src="Resources/Images/abajoDer.jpg">
+                            <div class="middle">
+                                <div class="text-overlay">107 Publicaciones</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -322,6 +356,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script> $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })</script>
 
 </body>
 
