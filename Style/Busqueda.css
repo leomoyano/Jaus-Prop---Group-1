@@ -20,7 +20,7 @@ body{
 }
 
 .contenedor-principal{
-    height: 1600px;
+    height: 1700px;
 }
 
 .col-mapa{
@@ -29,12 +29,63 @@ body{
 	font-family: var(--textoSimple);
 }
 
+.col-filtros h2{
+	font-size: 40px;
+	font-weight: bold;
+}
+
 .col-filtros{
 	height: 100%;
+	font-family: var(--textoSimple);
+}
+
+.lista-zonas .item-zona{
+	font-size: 18px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: var(--colorSecundario);
+	color: white;
+}
+
+.lista-zonas .item-zona:hover{
+	background-color: var(--colorPrincipal);
+	color: white;
+	transition: 0.2s ease-in;
+}
+
+.lista-zonas .titulo-zonas{
+	background-color: var(--colorPrincipal);
+	border-color: var(--colorPrincipal);
+	font-weight: bold;
+	font-size: 22px;
 }
 
 .contenedor-recom{
 	height: 500px;
 }
 
+.contenedor-recom .card-body a{
+	color:white;
+	background-color: var(--colorPrincipal);
+	font-weight: bold;
+	border-color: var(--colorPrincipal);
+}
+
+.contenedor-recom .card-body a:hover{
+	background-color: var(--colorSecundario);
+	transition: 0.2s ease-in;
+}
+
+.contenedor-recom h3{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.contenedor-ultim .card .card-body a{
+	text-decoration: none;
+	color: black;
+}
+
+.contenedor-ultim h4{
+	font-weight: bold;
+}
 

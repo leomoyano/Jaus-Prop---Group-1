@@ -45,9 +45,9 @@
     <section>
 
         <div class="container-fluid contenedor-principal">
-            <div class="row d-flex align-items-center">
-                <div class="col-3 col-filtros">
-                    <h3 class="text-center mt-3 mb-4 p-2">Buscador</h3>
+            <div class="row">
+                <div class="col-4 justify-content-center mt-3 pl-5 pr-5 col-filtros">
+                    <h2 class="text-center mt-3 mb-4 p-2">Buscador</h2>
                     <div class="input-group mb-2">
                         <select class="custom-select" id="tipo-inmueble">
                             <option selected>Tipo de Inmueble...</option>
@@ -65,19 +65,52 @@
                         <button class="btn btn-outline-secondary" type="button">Compra</button>
                         <button class="btn btn-outline-secondary" type="button">Venta</button>
                     </div>
-                    <div class="list-group mt-5 zones-list">
-                        <a class="list-group-item list-group-item-action active">Zonas San Miguel de Tucuman</a>
-                        <a href="#" class="list-group-item list-group-item-action">Zona Centro</a>
-                        <a href="#" class="list-group-item list-group-item-action">Zona Norte</a>
-                        <a href="#" class="list-group-item list-group-item-action">Zona Sur</a>
-                        <a href="#" class="list-group-item list-group-item-action">Zona Este</a>
-                        <a href="#" class="list-group-item list-group-item-action">Zona Oeste</a>
-                        <a href="#" class="list-group-item list-group-item-action">Zona Noroeste</a>
+                    <div class="list-group mt-5 lista-zonas">
+                        <a class="list-group-item list-group-item-action active titulo-zonas">Zonas San Miguel de
+                            Tucumán</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Centro</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Norte</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Sur</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Este</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Oeste</a>
+                        <a href="#" class="list-group-item list-group-item-action item-zona">Zona Noroeste</a>
                     </div>
                 </div>
-                <div class="col-9 align-content-center col-mapa">
-                    <div class="imagen">
-                        <img src="Resources/Images/mapasmdtzonas.jpg">
+                <div class="col-8 col-mapa">
+                    <div class="row align-items-start justify-content-center mt-5 fila-1">
+                        <div class="col-3 p-0">
+                            <a href="#">
+                                <img class="img-thumbnail float-right" src="Resources/Images/arribaIzq.jpg">
+                            </a>
+                        </div>
+                        <div class="col-3 text-center p-0">
+                            <a href="#">
+                                <img class="img-thumbnail" src="Resources/Images/arribaMedio.jpg">
+                            </a>
+                        </div>
+                        <div class="col-3 p-0">
+                            <a href="#">
+                                <img class="img-thumbnail float-left" src="Resources/Images/arribaDer.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center fila-2">
+                        <div class="col-3 p-0">
+                            <a href="#">
+                                <img class="img-thumbnail float-right" src="Resources/Images/abajoIzq.jpg">
+                            </a>
+                        </div>
+                        <div class="col-3 p-0 text-center">
+                            <a href="#">
+                                <img class="img-thumbnail" src="Resources/Images/abajoMedArr.jpg">
+                            </a>
+                            <a href="#">
+                                <img class="img-thumbnail" src="Resources/Images/abajoMedAb.jpg">
+                            </a>
+                        </div>
+                        <div class="col-3 p-0">
+                            <img class="img-thumbnail float-left" src="Resources/Images/abajoDer.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,7 +118,7 @@
                 <div class="col-12 mb-2">
                     <h3>Recomendados</h3>
                 </div>
-                <div class="card p-0 col-2">
+                <div class="card p-0 col-2 shadow-sm">
                     <img src="Resources/Images/logo/logo_white.svg" class="card-img-top" alt="..">
                     <div class="card-body">
                         <p>Alquiler | Departamentos</p>
@@ -98,7 +131,7 @@
                         <small class="text-muted">Publicado el 13 de Junio</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
+                <div class="card p-0 col-2 shadow-sm">
                     <img src="Resources/Images/logo/logo_white.svg" class="card-img-top" alt="..">
                     <div class="card-body">
                         <p>Alquiler | Departamentos</p>
@@ -111,7 +144,7 @@
                         <small class="text-muted">Publicado el 13 de Junio</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
+                <div class="card p-0 col-2 shadow-sm">
                     <img src="Resources/Images/logo/logo_white.svg" class="card-img-top" alt="..">
                     <div class="card-body">
                         <p>Alquiler | Departamentos</p>
@@ -124,7 +157,7 @@
                         <small class="text-muted">Publicado el 13 de Junio</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
+                <div class="card p-0 col-2 shadow-sm">
                     <img src="Resources/Images/logo/logo_white.svg" class="card-img-top" alt="..">
                     <div class="card-body">
                         <p>Alquiler | Departamentos</p>
@@ -137,7 +170,7 @@
                         <small class="text-muted">Publicado el 13 de Junio</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
+                <div class="card p-0 col-2 shadow-sm">
                     <img src="Resources/Images/logo/logo_white.svg" class="card-img-top w-100" alt="..">
                     <div class="card-body">
                         <p>Alquiler | Departamentos</p>
@@ -155,74 +188,74 @@
                 <div class="col-12 mb-2">
                     <h4>Últimos Publicados</h4>
                 </div>
-                <div class="card p-0 col-2">
-                    <a href="busqueda.html">
-                        <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
-                        <div class="card-body">
-                            <p>Alquiler | Departamentos</p>
+                <div class="card p-0 col-2 shadow-sm">
+                    <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
+                    <div class="card-body">
+                        <p>Alquiler | Departamentos</p>
+                        <a class="stretched-link" href="Busqueda.html">
                             <h5 class="card-title">2D - Avenida Sarmiento 45</h5>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="card-footer">
                         <small class="text-muted">HACE 2 MINUTOS</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
-                    <a href="busqueda.html">
-                        <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
-                        <div class="card-body">
-                            <p>Alquiler | Departamentos</p>
+                <div class="card p-0 col-2 shadow-sm">
+                    <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
+                    <div class="card-body">
+                        <p>Alquiler | Departamentos</p>
+                        <a class="stretched-link" href="Busqueda.html">
                             <h5 class="card-title">2D - Avenida Sarmiento 45</h5>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="card-footer">
                         <small class="text-muted">HACE 2 MINUTOS</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
-                    <a href="busqueda.html">
-                        <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
-                        <div class="card-body">
-                            <p>Alquiler | Departamentos</p>
+                <div class="card p-0 col-2 shadow-sm">
+                    <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
+                    <div class="card-body">
+                        <p>Alquiler | Departamentos</p>
+                        <a class="stretched-link" href="Busqueda.html">
                             <h5 class="card-title">2D - Avenida Sarmiento 45</h5>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="card-footer">
                         <small class="text-muted">HACE 2 MINUTOS</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
-                    <a href="busqueda.html">
-                        <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
-                        <div class="card-body">
-                            <p>Alquiler | Departamentos</p>
+                <div class="card p-0 col-2 shadow-sm">
+                    <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
+                    <div class="card-body">
+                        <p>Alquiler | Departamentos</p>
+                        <a class="stretched-link" href="Busqueda.html">
                             <h5 class="card-title">2D - Avenida Sarmiento 45</h5>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="card-footer">
                         <small class="text-muted">HACE 2 MINUTOS</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
-                    <a href="busqueda.html">
-                        <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
-                        <div class="card-body">
-                            <p>Alquiler | Departamentos</p>
+                <div class="card p-0 col-2 shadow-sm">
+                    <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
+                    <div class="card-body">
+                        <p>Alquiler | Departamentos</p>
+                        <a class="stretched-link" href="Busqueda.html">
                             <h5 class="card-title">2D - Avenida Sarmiento 45</h5>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="card-footer">
                         <small class="text-muted">HACE 2 MINUTOS</small>
                     </div>
                 </div>
-                <div class="card p-0 col-2">
-                    <a href="busqueda.html">
-                        <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
-                        <div class="card-body">
-                            <p>Alquiler | Departamentos</p>
+                <div class="card p-0 col-2 shadow-sm">
+                    <img src="Resources/Images/background.jpg" class="card-img-top img-fluid" alt="..">
+                    <div class="card-body">
+                        <p>Alquiler | Departamentos</p>
+                        <a class="stretched-link" href="Busqueda.html">
                             <h5 class="card-title">2D - Avenida Sarmiento 45</h5>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="card-footer">
                         <small class="text-muted">HACE 2 MINUTOS</small>
                     </div>
