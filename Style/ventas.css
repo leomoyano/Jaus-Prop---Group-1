@@ -41,6 +41,21 @@ article .card-header a {
   color: #ffffff;
 }
 
+aside .card-body a{
+  color: var(--colorSecundario);
+  font-weight: 600;
+}
+
+.card-body span {
+  color: var(--colorTerciario);
+}
+
+aside .card-body a:hover{
+  color: var(--colorTerciario);
+  outline: none;
+}
+
+
 /* Por Precio */
 aside .custom-range {
   color: var(--colorSecundario);
