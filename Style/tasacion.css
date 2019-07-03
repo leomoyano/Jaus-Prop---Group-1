@@ -43,13 +43,16 @@ body {
     transition: .5s;
 }
 
-.btn-tasacion {
-    background: var(--colorSecundario);
-    color: #ffffff;
+.btn-enviar a {
+    background-color: var(--colorSecundario);
+	color: #ffffff;
+	border: none;
+	font-family: var(--textoSimple);
 }
 
-.btn-tasacion:hover {
-    color: var(--background);
+.btn-enviar a:hover {
+    background-color: var(--colorPrincipal);
+    transition: 0.2s ease-in;
 }
 
 .consulta-fijo:hover {
@@ -71,10 +74,6 @@ label {
 
 .btn-group-toggle:focus {
     box-shadow: none;
-}
-
-selected {
-    text-align: center;
 }
 
 /* Checkbox */
