@@ -16,7 +16,6 @@
 
 body{
 	background: var(--backgroundColor);
-	font-family: 'Open Sans', sans-serif;
 }
 
 .contenedor-principal{
@@ -94,10 +93,12 @@ body{
 }
 
 .lista-zonas .item-zona{
-	font-size: 18px;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	background-color: var(--colorSecundario);
-	color: white;
+	font-size: 1.1em;
+	font-family: var(--textoSimple);
+	color: var(--colorPrincipal);
+	background-color: #dfdfdf;
+	border-bottom: 3px solid var(--colorSecundario);
+	border-radius: 8px;
 }
 
 .lista-zonas .item-zona:hover{
@@ -109,8 +110,9 @@ body{
 .lista-zonas .titulo-zonas{
 	background-color: var(--colorPrincipal);
 	border-color: var(--colorPrincipal);
-	font-weight: bold;
-	font-size: 22px;
+	font-size: 1.5em;
+	border-radius: 8px;
+	color: white;
 }
 
 .contenedor-recom{
@@ -118,15 +120,18 @@ body{
 }
 
 .contenedor-recom .card-body a{
-	color:white;
-	background-color: var(--colorPrincipal);
-	font-weight: bold;
-	border-color: var(--colorPrincipal);
+	background-color: var(--backgroundColor);
+	color: var(--colorPrincipal);
+	border: none;
+	border-bottom: 3px solid var(--colorSecundario);
+	font-family: var(--textoSimple);
 }
 
 .contenedor-recom .card-body a:hover{
 	background-color: var(--colorSecundario);
+	border-bottom: 3px solid var(--backgroundColor);
 	transition: 0.2s ease-in;
+	color: #ffffff;
 }
 
 .contenedor-recom h3{
