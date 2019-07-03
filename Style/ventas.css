@@ -10,22 +10,66 @@
   --colorPrincipal: #57635f;
   --colorSecundario: #566f7c;
   --colorTerciario: #3f525c;
+  --background: #eeeeee;
   --textoSimple: "Tajawal", sans-serif;
 }
 
 body {
   background: #eeeeee;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--textoSimple);
+  font-size: 2rem;
 }
 
-/* Principal */
+/* Aside */
 
-.ventas-principal{
-    height: 400px;
-    background: red;
+aside article {
+  /* color: #566f7c; */
 }
 
-/* Menu */ 
-aside {
-    background: blue;
+aside article .form-control {
+  background: #eeebeb;
+  color: #444444;
+  border-bottom: 3px solid var(--colorTerciario);
+  transition: .5s;
+}
+
+article .card-header {
+  background: var(--colorSecundario);
+}
+
+article .card-header a {
+  color: #ffffff;
+}
+
+/* Por Precio */
+aside .custom-range {
+  color: var(--colorSecundario);
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: var(--colorSecundario);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  /* width: 100%; */
+  cursor: pointer;
+  background: #b4b4b4;
+}
+
+aside .btn-aplicar {
+  background: var(--colorSecundario);
+  color: #ffffff;
+}
+
+aside .btn-aplicar:hover {
+  color: var(--background);
+}
+
+/* checkbox */
+aside .custom-control-label::after {
+  height: .9em;
+  background: #566f7c;
+  border-radius: 15%;
+  box-shadow: none;
 }

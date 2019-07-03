@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-	<meta charset="UTF-8">
-	<title>JAUS Propiedades</title>
-	<script src="https://kit.fontawesome.com/ded3d597f1.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="Style/Template.css">
-	<link rel="stylesheet" href="Style/ventas.css">
+  <meta charset="UTF-8">
+  <title>JAUS Propiedades</title>
+  <script src="https://kit.fontawesome.com/ded3d597f1.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="Style/Template.css">
+  <link rel="stylesheet" href="Style/ventas.css">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="Style/template.css">
 
-	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
 </head>
 
@@ -41,71 +43,211 @@
     </div>
   </nav>
   <!-- Fin Navbar -->
-  <div class="container">
-    <div class="row col-12">
-      <aside class="col-4">
-        fjigejgierij
-      </aside>
-      <div class="col-8 ventas-principal">
-        gergert
+
+  <section class="section-content bg padding-y">
+    <div class="container">
+
+      <div class="row">
+        <aside class="col-lg-3 col-md-4">
+
+          <div class="card card-filter">
+            <article class="card-group-item por-tipo">
+              <header class="card-header">
+                <a class="row" aria-expanded="true" href="#" data-toggle="collapse" data-target="#collapse22">
+                  <i class="icon-action fa fa-chevron-down"></i>
+                  <h6 class="title ml-2">Por tipo</h6>
+                </a>
+              </header>
+              <div style="" class="filter-content collapse show" id="collapse22">
+                <div class="card-body">
+                  <ul class="list-unstyled list-lg">
+                    <li><a href="#">Departamento<span class="float-right badge badge-light round">142</span> </a>
+                    </li>
+                    <li><a href="#">Casa<span class="float-right badge badge-light round">22</span> </a>
+                    </li>
+                    <li><a href="#">PH<span class="float-right badge badge-light round">3</span> </a>
+                    </li>
+                    <li><a href="#">Oficina<span class="float-right badge badge-light round">12</span> </a></li>
+                  </ul>
+                </div> <!-- Body de las tarjetas// -->
+              </div> <!-- collapse .// -->
+            </article> <!-- card-group-item.// -->
+            <article class="card-group-item por-precio">
+              <header class="card-header">
+                <a href="#" data-toggle="collapse" data-target="#collapse33" aria-expanded="true" class="row">
+                  <i class="icon-action fa fa-chevron-down"></i>
+                  <h6 class="title ml-2">Por Precio</h6>
+                </a>
+              </header>
+              <div class="filter-content collapse show" id="collapse33" style="">
+                <div class="card-body">
+                  <input type="range" class="custom-range" min="0" max="100" name="">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label>Min</label>
+                      <input class="form-control" placeholder="$0" type="number">
+                    </div>
+                    <div class="form-group text-right col-md-6">
+                      <label>Max</label>
+                      <input class="form-control" placeholder="$1,0000" type="number">
+                    </div>
+                  </div> <!-- form-row.// -->
+                  <button class="btn btn-block btn-aplicar ">Aplicar</button>
+                </div> <!-- card-body.// -->
+              </div> <!-- collapse .// -->
+            </article> <!-- card-group-item.// -->
+            <article class="card-group-item por-ameneties">
+              <header class="card-header">
+                <a href="#" data-toggle="collapse" data-target="#collapse44" aria-expanded="true" class="row">
+                  <i class="icon-action fa fa-chevron-down"></i>
+                  <h6 class="title ml-2">Por Amenities</h6>
+                </a>
+              </header>
+              <div class="filter-content collapse show " id="collapse44" style="">
+                <div class="col-12">
+                  <div class="justify-content-center m-3">
+                    <div class="col-4">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="piscina">
+                        <label class="custom-control-label" for="piscina">Piscina</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="parrilla">
+                        <label class="custom-control-label" for="parrilla">Parrilla</label>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="sum">
+                        <label class="custom-control-label" for="sum">SUM</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="gym">
+                        <label class="custom-control-label" for="gym">Gym</label>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="business">
+                        <label class="custom-control-label" for="business">Business Center</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="laundry">
+                        <label class="custom-control-label" for="laundry">Laundry</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- collapse .// -->
+            </article> <!-- card-group-item.// -->
+          </div> <!-- card.// -->
+
+        </aside> <!-- col.// -->
+        <main class="col-lg-9 col-md-8">
+
+          <article class="card card-product">
+            <div class="card-body">
+              <div class="row">
+                <aside class="col-sm-3">
+                  <div class="img-wrap"><img src="images/items/1.jpg"></div>
+                </aside> <!-- col.// -->
+                <article class="col-sm-5">
+                  <h4 class="title"> Ut wisi enim ad minim veniam </h4>
+                  <dl class="dlist-align">
+                    <dt>Ambiente/s</dt>
+                    <dd>3</dd>
+                  </dl> <!-- item-property-hor .// -->
+                  <dl class="dlist-align">
+                    <dt>Baño/s</dt>
+                    <dd>1</dd>
+                  </dl> <!-- item-property-hor .// -->
+                  <dl class="dlist-align">
+                    <dt>Superficie Total (m²)</dt>
+                    <dd>80</dd>
+                  </dl> <!-- item-property-hor .// -->
+                  <dl class="dlist-align">
+                    <dt>Amenities</dt>
+                    <dd>Piscina, SUM, Gym</dd>
+                  </dl> <!-- item-property-hor .// -->
+                  </ul>
+                </article> <!-- col.// -->
+                <aside class="col-sm-4 border-left">
+                  <div class="action-wrap">
+                    <div class="price-wrap h4">
+                      <span class="price"> U$D 72.245 </span>
+                    </div> <!-- info-price-detail // -->
+                    <p class="text-success">En Venta</p>
+                    <br>
+                    <p class="d-flex justify-content-around">
+                      <a href="#" class="btn btn-primary col-md-5">Consultar</a>
+                      <a href="#" class="btn btn-secondary col-md-5">Details</a>
+                    </p>
+                  </div> <!-- action-wrap.// -->
+                </aside> <!-- col.// -->
+              </div> <!-- row.// -->
+            </div> <!-- card-body .// -->
+          </article> <!-- card product .// -->
+
+        </main> <!-- col.// -->
+      </div>
+
+    </div> <!-- container .//  -->
+  </section>
+
+  <!-- Footer-->
+  <div class="py-5 bg-light footer-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0 foot-consulta">
+          <h5>Realiza tu consulta</h5>
+          <ul class="contact-info list-unstyled">
+            <li><a href="mailto:sales@jausprop.com" class="text-white">consulta@jausprop.com</a></li>
+            <li><a href="tel:123456789" class="text-white">+54 381 456789</a></li>
+          </ul>
+          <p class="text-active">Estamos disponibles de Lunes a Sabado, sacate las dudas, envianos un mail o un mensaje.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <h5>Secciones</h5>
+          <ul class="links list-unstyled">
+            <li> <a href="#" class="text-white">Tasá tu vivienda</a></li>
+            <li> <a href="#" class="text-white">Compra</a></li>
+            <li> <a href="#" class="text-white">Vende</a></li>
+            <li> <a href="#" class="text-white">Sobre Nosotros</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <h5>Seguínos!</h5>
+          <ul class="links list-unstyled d-flex socialnet">
+            <li><i class="icon fab fa-facebook-f"></i></li>
+            <li><i class="icon fab fa-instagram"></i></li>
+            <li><i class="icon fab fa-twitter"></i></li>
+            <li><i class="icon fab fa-linkedin-in"></i></li>
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="py-3 bg-default text-white footer-end">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-md-0">&copy; 2019 Jaus Propiedades. All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
- <!-- Footer-->
- <div class="py-5 bg-light footer-page">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 mb-4 mb-lg-0 foot-consulta">
-        <h5>Realiza tu consulta</h5>
-        <ul class="contact-info list-unstyled">
-          <li><a href="mailto:sales@jausprop.com" class="text-white">consulta@jausprop.com</a></li>
-          <li><a href="tel:123456789" class="text-white">+54 381 456789</a></li>
-        </ul>
-        <p class="text-active">Estamos disponibles de Lunes a Sabado, sacate las dudas, envianos un mail o un mensaje.
-        </p>
-      </div>
-      <div class="col-lg-4 col-md-6 ">
-        <h5>Secciones</h5>
-        <ul class="links list-unstyled">
-          <li> <a href="#" class="text-white">Tasá tu vivienda</a></li>
-          <li> <a href="#" class="text-white">Compra</a></li>
-          <li> <a href="#" class="text-white">Vende</a></li>
-          <li> <a href="#" class="text-white">Sobre Nosotros</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-6 text-center">
-        <h5>Seguínos!</h5>
-        <ul class="links list-unstyled d-flex socialnet">
-          <li><i class="icon fab fa-facebook-f"></i></li>
-          <li><i class="icon fab fa-instagram"></i></li>
-          <li><i class="icon fab fa-twitter"></i></li>
-          <li><i class="icon fab fa-linkedin-in"></i></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="py-3 bg-default text-white footer-end">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p class="mb-md-0">&copy; 2019 Jaus Propiedades. All rights reserved. </p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
 </body>
 
