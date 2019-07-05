@@ -11,19 +11,27 @@
   --colorSecundario: #566f7c;
   --colorTerciario: #3f525c;
   --background: #eeeeee;
+  --gradient1: linear-gradient(to bottom, var(--colorSecundario), var(--colorPrincipal));
   --textoSimple: "Tajawal", sans-serif;
 }
 
 body {
-  background: #eeeeee;
   font-family: var(--textoSimple);
   font-size: 2rem;
 }
 
 /* Aside */
 
-aside article {
-  /* color: #566f7c; */
+aside .card-filter{
+  border: none !important;
+}
+
+.non-underline-link {
+  text-decoration: none !important;
+}
+
+.card-reader a .row:hover {
+  text-decoration: none;
 }
 
 aside article .form-control {
@@ -41,22 +49,33 @@ article .card-header a {
   color: #ffffff;
 }
 
-aside .card-body a{
+aside .card-body a {
   color: var(--colorSecundario);
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .card-body span {
   color: var(--colorTerciario);
 }
 
-aside .card-body a:hover{
+aside .card-body a:hover {
   color: var(--colorTerciario);
   outline: none;
 }
 
+aside .btn-secondary {
+  font-weight: 300;
+  /* background: #677772; */
+  background: linear-gradient(to bottom, var(--colorSecundario), var(--colorPrincipal));
 
-/* Por Precio */
+}
+
+.btn-secondary.active {
+  background: var(--colorTerciario) !important;
+}
+
+
+/* Card Precio */
 aside .custom-range {
   color: var(--colorSecundario);
   outline: none;
@@ -67,13 +86,12 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-  /* width: 100%; */
   cursor: pointer;
   background: #b4b4b4;
 }
 
 aside .btn-aplicar {
-  background: var(--colorSecundario);
+  background: var(--gradient1);
   color: #ffffff;
 }
 
@@ -81,10 +99,25 @@ aside .btn-aplicar:hover {
   color: var(--background);
 }
 
+aside .btn-aplicar:focus {
+  background: var(--colorTerciario);
+}
+
 /* checkbox */
 aside .custom-control-label::after {
-  height: .9em;
-  background: #566f7c;
-  border-radius: 15%;
   box-shadow: none;
+}
+
+aside .custom-control-label::after:checked {
+  background: #566f7c !important;
+}
+
+/* Container posts */
+
+.container-posts .detalles-posts {
+  font-size: .7rem;
+}
+
+.card-body .img-wrap img{
+  width: 100%;
 }

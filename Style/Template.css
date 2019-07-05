@@ -14,7 +14,7 @@
 }
 
 body {
-  background: #eeeeee;
+  background: linear-gradient(to bottom, #b6b6b6, var(--colorSecundario)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Open Sans", sans-serif;
 }
 
