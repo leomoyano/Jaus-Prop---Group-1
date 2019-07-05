@@ -45,10 +45,11 @@
 .grey-box,
 .grey-box2 {
   height: 38em;
+  color: #ffffff;
 }
 
 .grey-box .home-intro-content h2 {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Seccion Compra-Venta */
@@ -117,12 +118,13 @@
 .svg-servicios {
   height: 80px;
   margin-top: 10px;
+  fill: red;
 }
 
 .card-servicios h2 {
   align-content: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 1em;
 }
 
