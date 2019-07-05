@@ -121,3 +121,19 @@ aside .custom-control-label::after:checked {
 .card-body .img-wrap img{
   width: 100%;
 }
+
+/* Navegador paginas */
+
+.page-item .page-link{
+  color: var(--colorTerciario) !important;
+  background: var(--background);
+}
+
+.page-link:active {
+  background: #3f525c !important;
+  color: #ffffff;
+}
+
+.page-item .page-link:hover {
+  background: #b4b4b4;
+}
