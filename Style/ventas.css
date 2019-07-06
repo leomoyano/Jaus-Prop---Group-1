@@ -126,14 +126,20 @@ aside .custom-control-label::after:checked {
 
 .page-item .page-link{
   color: var(--colorTerciario) !important;
-  background: var(--background);
+  border: none;
 }
 
-.page-link:active {
+.page-item.disabled .page-link {
+  color: #a1a1a1 !important;
+}
+
+.page-item.active .page-link {
   background: #3f525c !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .page-item .page-link:hover {
-  background: #b4b4b4;
+  background: var(--colorPrincipal);
+  color: #ffffff !important;
+  border: none;
 }
