@@ -144,6 +144,12 @@ aside .custom-control-label::after:checked {
   border: none;
 }
 
+a.btn.btn-primary.col-5 {
+  background: #6d857d;
+  color: #ffffff;
+  outline: none !important;
+}
+
 /* Modal */
 .modal-dialog {
   font-family: var(--textoSimple);
@@ -155,7 +161,6 @@ aside .custom-control-label::after:checked {
   border-radius: 10px;
   /* border-bottom: 5px solid var(--colorPrincipal); */
 }
-
 
 .modal-dialog label{
   font-weight: bold;
@@ -182,6 +187,5 @@ aside .custom-control-label::after:checked {
 }
 
 .modal-content .btn-primary:hover {
-  color: #fff;
   background-color: var(--colorSecundario);
 }
