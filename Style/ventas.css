@@ -143,3 +143,46 @@ aside .custom-control-label::after:checked {
   color: #ffffff !important;
   border: none;
 }
+
+/* Modal */
+.modal-dialog {
+  font-family: var(--textoSimple);
+}
+
+.modal-dialog input, .modal-dialog textarea{
+  color: #000000;
+  font-weight: 400;
+  border-radius: 10px;
+  /* border-bottom: 5px solid var(--colorPrincipal); */
+}
+
+
+.modal-dialog label{
+  font-weight: bold;
+}
+
+.modal-dialog h4{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.modal-dialog .modal-content {
+  /* background: #ffffffe3; */
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #b6b6b6ef, var(--colorSecundario));
+}
+
+.modal-content .btn-primary {
+  background: var(--colorPrincipal);
+  outline-color: red !important;
+  box-shadow: none;
+}
+
+.modal-content .btn-secondary {
+  background: var(--colorTerciario);
+}
+
+.modal-content .btn-primary:hover {
+  color: #fff;
+  background-color: var(--colorSecundario);
+}
