@@ -75,7 +75,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 11em 0;
+  padding: 7em 0;
   text-align: center;
   height: 100%;
 }
@@ -115,10 +115,9 @@
   margin: auto 10px !important;
 }
 
-.svg-servicios {
+.col-md-3 .svg-servicios{
   height: 80px;
   margin-top: 10px;
-  fill: red;
 }
 
 .card-servicios h2 {
@@ -131,6 +130,7 @@
 .card-title {
   font-family: var(--textoSimple);
   font-weight: 800;
+  font-size: 30px;
 }
 
 .card-parrafo {

@@ -4,6 +4,7 @@
   --colorTerciario: #3f525c;
   --background: #eeeeee;
   --textoSimple: "Tajawal", sans-serif;
+  --gradient1: linear-gradient(to bottom, var(--colorSecundario), var(--colorPrincipal));
 }
 
 * {
@@ -44,10 +45,14 @@ form .send-consulta:hover {
   color: var(--background);
 }
 
+.consulta-fijo {
+  background: #ffffffa9;
+  border-radius: 5px;
+}
+
 .consulta-fijo:hover {
   background: #ffffff;
   transition: .8s;
-  border-radius: 5px;
 }
 
 /* Precio y Detalles*/
