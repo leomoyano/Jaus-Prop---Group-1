@@ -36,7 +36,7 @@
         <div class="navbar-nav ml-auto">
           <a class="nav-buttoms text-center" href="Tasacion.html">Tasación</a>
           <a class="nav-buttoms text-center" href="Busqueda.html">Compra</a>
-          <a class="nav-buttoms text-center" href="Tasacion.html">Venta</a>
+          <a class="nav-buttoms text-center" href="ventas.html">Venta</a>
           <a class="nav-buttoms text-center" href="about.html">Sobre Nosotros</a>
         </div>
       </div>
@@ -290,9 +290,56 @@
                     <p class="text-success">En Venta</p>
                     <br>
                     <p class="d-flex justify-content-around">
-                      <a href="#" class="btn btn-primary col-5" data-toggle="modal" data-target="#exampleModal">Consultar</a>
+                      <a href="#" class="btn btn-primary col-5" data-toggle="modal" data-target="#myModal">Consultar</a>
                       <a href="details.html" class="btn btn-secondary col-5">Detalles</a>
                     </p>
+                    <!-- Modal -->
+                  <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-md modal-dialog-centered">
+                     <div class="modal-content p-4">
+  
+                       <!-- Modal Header -->
+                       <div class="modal-header">
+                          <h4 class="modal-title">
+                            Hacé tu consulta</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                       </div> 
+                        <!-- Modal body -->
+                        <div class="toast-body">
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Nombre</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Apellido</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pérez">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="JuanPerez@Jausprop.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Telefono</label>
+                            <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="381123456">
+                          </div>
+                          
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Consulta</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        </div>
+                        </form>
+    
+                       <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>                    
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+                       </div>
+    
+                      </div>
+                    </div>
+                   </div>
                   </div> <!-- action-wrap.// -->
                 </aside> <!-- col.// -->
               </div> <!-- row.// -->
