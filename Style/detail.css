@@ -24,19 +24,26 @@ text-area {
   text-align: center;
   background: none;
   border: none;
-  border-bottom: 3px solid var(--colorSecundario);
+  background: var(--background);
+  /* border-bottom: 3px solid var(--colorSecundario); */
   box-shadow: none;
+  border-radius: 10px;
 }
 
 .form-control:focus, text-area:focus {
   background: #dfdfdf;
   color: #444444;
   box-shadow: none;
-  border-bottom: 3px solid var(--colorTerciario);
+  /* border-bottom: 3px solid var(--colorTerciario); */
   transition: .5s;
 }
 
 form .send-consulta {
+  background: var(--colorPrincipal);
+  color: #ffffff;
+}
+
+form .send-consulta:hover {
   background: var(--colorSecundario);
   color: #ffffff;
 }
@@ -46,8 +53,12 @@ form .send-consulta:hover {
 }
 
 .consulta-fijo {
-  background: #ffffffa9;
-  border-radius: 5px;
+  background: linear-gradient(to bottom, #b6b6b6ef, var(--colorSecundario));
+  border-radius: 20px;
+}
+
+.consulta-fijo input{
+  background: 
 }
 
 .consulta-fijo:hover {
