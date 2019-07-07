@@ -174,8 +174,7 @@ aside .custom-control-label::after:checked {
 
 .modal-content .btn-primary {
   background: var(--colorPrincipal);
-  outline-color: red !important;
-  box-shadow: none;
+  color: #ffffff;
 }
 
 .modal-content .btn-secondary {
