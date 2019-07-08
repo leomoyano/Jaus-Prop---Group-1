@@ -45,7 +45,8 @@ body {
 
 .btn-enviar a {
     background-color: var(--colorSecundario);
-	color: #ffffff;
+    color: #ffffff;
+    width: 20%;
 	border: none;
 	font-family: var(--textoSimple);
 }
