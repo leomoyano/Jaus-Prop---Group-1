@@ -21,11 +21,13 @@ body {
 
 .enviado-section {
     background: #ffffffbe;
+    border-radius: 15px;
 }
 
 .enviado-section .svg-enviado {
     color: green;
     width: 20%;
+
 }
 
 
