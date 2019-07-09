@@ -132,12 +132,13 @@ body{
 	font-weight: bold;
 }
 
-.contenedor-ultim .card .card-body a{
+.carousel-inner .card .card-body a{
 	text-decoration: none;
 	color: black;
 }
 
 .containerU-titulo h4{
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 
