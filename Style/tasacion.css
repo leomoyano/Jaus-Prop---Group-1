@@ -20,6 +20,7 @@ body {
 
 .detalles-tasacion {
     background: #ffffff !important;
+    border-radius: 8px;
 }
 
 /* Formulario */
