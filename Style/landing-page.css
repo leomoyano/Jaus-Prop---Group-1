@@ -3,6 +3,7 @@
   --colorSecundario: #566f7c;
   --colorTerciario: #3f525c;
   --textoSimple: "Tajawal", sans-serif;
+  --gradient1: linear-gradient(to bottom, var(--colorSecundario), var(--colorPrincipal));
 }
 
 * {
@@ -54,20 +55,23 @@
 
 /* Seccion Compra-Venta */
 .btn-compra,
-.btn-venta {
-  background: #57635f;
+.btn-venta,
+.btn-busqueda {
+  background: var(--gradient1);
   color: #ffffff;
   font-family: var(--textoSimple);
   font-weight: 500;
   font-size: 1.5em;
-  width: 30%;
+  /* width: 30%; */
+  height: ;
   align-items: center;
 }
 
 .btn-compra:hover,
-.btn-venta:hover {
-  color: #dadada;
-  background-color: var(--colorTerciario);
+.btn-venta:hover,
+.btn-busqueda:hover {
+  color: #ffffff;
+  background: var(--colorTerciario);
 }
 
 /* Dentro de contenidos*/
