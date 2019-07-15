@@ -54,8 +54,7 @@
 }
 
 /* Seccion Compra-Venta */
-.btn-compra,
-.btn-venta,
+
 .btn-busqueda {
   background: var(--gradient1);
   color: #ffffff;

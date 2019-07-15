@@ -51,17 +51,12 @@
   border-bottom: 4px solid var(--colorTerciario) !important;
 }
 
-.btn-enviar {
-  border-radius: 15px;
-}
-
 .btn-enviar a {
   background-color: var(--colorSecundario);
   font-size: 17px;
   color: #ffffff !important;
-  border: none;
   font-family: var(--textoSimple);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .btn-enviar a:hover {

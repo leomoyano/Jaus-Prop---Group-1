@@ -112,7 +112,7 @@ body{
 	color: white;
 }
 
-.contenedor-recom .card-body a{
+.button-ver a{
 	background-color: var(--backgroundColor);
 	color: var(--colorPrincipal);
 	border: none;
@@ -120,7 +120,7 @@ body{
 	font-family: var(--textoSimple);
 }
 
-.contenedor-recom .card-body a:hover{
+.button-ver a:hover{
 	background-color: var(--colorSecundario);
 	border-bottom: 3px solid var(--backgroundColor);
 	transition: 0.2s ease-in;
